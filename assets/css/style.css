@@ -256,16 +256,20 @@ main {
  
 }
     
-    .flex-item {
-      flex-basis: 100%;
-    }
+.flex-item {
+    flex-basis: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 200px;
 
-   
-  
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+}
+.flex-item > div {
+    font-size: 12px;
+} 
+.contact address {
+    flex-direction: column;
+    align-items: flex-start;
+}
   }
   
   
