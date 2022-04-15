@@ -127,6 +127,21 @@ p {
       margin-top: 25px;
      
   }
+ ul.ba {
+    list-style-type: none;
+    
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+}
+ul.ba li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fa-brands {
+    font-size: 3em;
+}
+  
   .hero {
     /* display: flex; */
 /*   
