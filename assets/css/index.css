@@ -26,6 +26,7 @@ main {
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     line-height: 15vh;
+    text-align: center;
     box-shadow: 0 5px 10px gray, 0 -5px 10px gray;
     /* display: flex; */
     /* flex-direction: row; */
@@ -49,6 +50,7 @@ main {
 .hero {
     margin: 10% auto;
     max-width: 50%;
+    /* text-align: center; */
 
   }
 .navbar h1 {
@@ -65,31 +67,18 @@ main {
    
 }
 .home {
-    
-    /* margin: 10% auto; */
-    text-align: center;
     max-width: 80%;
-   
-   
   }
   .home > h2 {
     font-family: Shippori Mincho B1, serif;
     margin-bottom: 20px;
     font-size: 3rem;
     margin: 0 auto;
-    /* margin-left: 30%; */
-    /* margin: 0 auto; */
-    
+
   }
 
   .home a {
-   
-      /* display: flex;
-      align-items: center; */
-      /* margin-top: 20%; */
       margin-right: 40px;
-     
-    
       font-size: 3rem;
       border: 2px solid var(--secondary);
       border-radius: 25px;
@@ -97,4 +86,69 @@ main {
       background-color: var(--secondary);
       box-shadow: 2px 5px var(--tertiary);
   }
- 
+  @media screen and (max-width: 980px) {
+   .navbar h1 {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+    
+   .home> div {
+      flex: 0 0 100%;
+      align-items: center;
+      
+    }
+    .home > div a {
+      justify-content: center;
+      font-size: 25px;
+    }
+  
+   
+  
+  
+    /* .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    } */
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+  
+    .hero {
+      justify-content: center;
+      text-align: center;
+      /* max-width: 50%; */
+    }
+    .navbar > h1 {
+        font-size: 20vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .home {
+       flex-direction: column;
+      align-items: center;  
+    }
+  .home > h2 {
+      font-size: 5vw;
+  }
+    .home > div {
+     
+      font-size: 10vw;
+      margin-left: 30px;
+    }
+    .home > div a {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+  }
+  

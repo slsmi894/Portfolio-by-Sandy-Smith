@@ -187,4 +187,85 @@ ul.ba li {
     margin: 0;
     line-height: 3vh;
   }
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+   /* .hero {
+      justify-content: center;
+      text-align: center;
+    }   */
+header {
+    flex-shrink: calc(50% - 1em);
+    
+}
+nav a {
+    font-size: 15px;
+}
+main {
+    flex-shrink: calc(50% - 1em);
+  
+}
+.title {
+    font-size: 8vw;
+}
+.p1 {
+    flex-shrink: calc(50% - 1em);
+    flex-direction: column;
+    align-items: center;  
+     
+}
+.p1 img {
+    width: 200px;
+    
+}
+.p1 p {
+    font-size: 12px;
+    margin: 0 10%;
+    align-items: center;  
+ 
+}
+    
+    .flex-item {
+      flex-basis: 100%;
+    }
+
+   
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
   
