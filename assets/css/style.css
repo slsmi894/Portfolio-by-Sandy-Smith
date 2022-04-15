@@ -266,10 +266,10 @@ main {
 .flex-item > div {
     font-size: 12px;
 } 
-.contact address {
+/* .contact address {
     flex-direction: column;
     align-items: flex-start;
-}
+} */
   }
   
   
