@@ -68,6 +68,11 @@ p {
     animation: gradient 15s ease infinite;
     line-height: 15vh;
     box-shadow: 0 5px 10px gray, 0 -5px 10px gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes gradient {
