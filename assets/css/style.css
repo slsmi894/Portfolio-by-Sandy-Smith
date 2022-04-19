@@ -17,15 +17,16 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
     background-color: var(--tertiary);
-    /* line-height: 15vh; */
-    width: 100%;
-    height:100%;
+    /* line-height: 10vh; */
+    /* width: 100%;
+    height: 80%; */
 }
 
 
 p {
     margin: 0;
   }
+
   header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -50,7 +51,6 @@ p {
   nav {
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
   }
   
@@ -79,14 +79,10 @@ p {
   main {
     background: linear-gradient(-45deg, #eebd52, #f36744, #12536b, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 6s ease infinite;
     line-height: 15vh;
     box-shadow: 0 5px 10px gray, 0 -5px 10px gray;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center;
-    align-items: center; */
+    
 }
 
 @keyframes gradient {
@@ -102,28 +98,128 @@ p {
 
 }
 
-  .title {
-     text-align: center;
-     font-size: 4em;
-  }
-  .p1 {
-    line-height: 1.5;
-    display: flex;
-    /* flex-direction: row;
+.title {
+    text-align: center;
+    font-size: 4em;
+}
+.p1 {
+  line-height: 1.5;
+  display: flex;
+  flex-basis: calc(50% - 1em);
+  justify-content: space-evenly;
+  max-width: 90%;
+  margin: 0 auto;
+  
+}
+.p1 p {
+    margin-top: 25px;
+    font-size: 1.1em;
+     margin-left: 15px;
+}
 
-    flex-wrap: wrap; */
-    flex-basis: calc(50% - 1em);
-    justify-content: space-evenly;
-    max-width: 90%;
-   
+.p1 img {
+  width: 375px;
+  height: 340px;
+}
+  
+.wordCarousel {
+  font-size: 36px;
+  font-weight: 100;
+  color: #eee;
+
+}
+.wordCarousel > div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+    
+}
+.wordCarousel li {
+        font-family: Poppins;
+        color: #eee;
+        font-weight: 700;
+        padding: 0 10px;
+        height: 45px;
+        margin-bottom: 45px;
+        display: block;
+    }
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+
+
+@keyframes flip2 {
+  0% { margin-top: -180px; }
+  5% { margin-top: -90px;  }
+  50% { margin-top: -90px; }
+  55% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+
+/* Layout */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+.modal,
+.flip {
+  width: 100%;
+  height: 20vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.modal {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: darkorange;  */
+  
+}
+.modal::after {
+      content:"";
+      display: block;
+      width: 110%;
+      height: 40vh;
+      /* background: radial-gradient(#222, #000); */
+      position: absolute;
+      z-index: -1;
+      transform: rotate(20deg);
+      border-radius: 50%;
   }
-  .p1 p {
-      margin-top: 25px;
-     
-  }
+
  ul.ba {
     list-style-type: none;
-    
     padding: 0;
     font-size: 2em;
     text-align: center;
@@ -149,7 +245,7 @@ ul.ba li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
   }
   
@@ -169,6 +265,7 @@ ul.ba li {
     background-blend-mode: soft-light;
     background-size: 150%;
     transition: all 0.5s;
+    
   
   }
   
@@ -187,11 +284,26 @@ ul.ba li {
     margin: 0;
     line-height: 3vh;
   }
+
+.c19 {
+  background-image: url("../images/hounds.jfif");
+}
+.train {
+  background-image: url("../images/trainSchedtrack.jfif");
+}
+.cosmic {
+  background-image: url("../images/cosmic.jpg");
+}
+.daily {
+  background-image: url("../images/todolist.jpg");
+}
+
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
-      justify-content: center;
+     margin: 0 auto;
       text-align: center;
+      
     }
   
     header h1 {
@@ -202,10 +314,40 @@ ul.ba li {
     }
   
     header nav {
-      justify-content: center;
+      margin: 0 auto;
     }
+    .p1 {
+      flex-shrink: calc(50% - 1em);
+      flex-direction: column;
+      align-items: center;  
+       
+  }
+  .p1 img {
+      width: 475px;
+      height: 425px;
+      
+  }
+  .p1 p {
+      max-width: 80%;
+      font-size: 20px;
+      align-items: center;
+      margin: 0 auto;
+      /* align-items: center;   */
+      line-height: 1.5;
+   
+  }
+  .modal {
+    width: 88%;
+    height: 15vh;
+    margin-left: 20px;
+  }
+  .modal-content > h4 {
+    font-size: 18px;
+    
+  }
   
-    .page-section > h2,
+  
+    /* .page-section > h2,
     .page-section > div {
       flex: 0 0 100%;
     }
@@ -218,13 +360,10 @@ ul.ba li {
       text-align: left;
       font-size: 7vw;
     }
-  }
+  } */
   
   @media screen and (max-width: 768px) {
-   /* .hero {
-      justify-content: center;
-      text-align: center;
-    }   */
+ 
 header {
     flex-shrink: calc(50% - 1em);
     
@@ -239,6 +378,7 @@ main {
 .title {
     font-size: 8vw;
 }
+
 .p1 {
     flex-shrink: calc(50% - 1em);
     flex-direction: column;
@@ -246,15 +386,28 @@ main {
      
 }
 .p1 img {
-    width: 200px;
+    width: 275px;
+    height: 225px;
     
 }
 .p1 p {
     font-size: 12px;
     margin: 0 10%;
     align-items: center;  
+    line-height: 2;
  
 }
+.modal {
+  width: 88%;
+  height: 15vh;
+  margin-left: 30px;
+}
+.modal-content > h4 {
+  font-size: 15px;
+  
+}
+
+
     
 .flex-item {
     flex-basis: 100%;
@@ -266,10 +419,7 @@ main {
 .flex-item > div {
     font-size: 12px;
 } 
-/* .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-} */
-  }
+
+  
   
   
