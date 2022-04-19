@@ -118,8 +118,8 @@ p {
 }
 
 .p1 img {
-  width: 375px;
-  height: 340px;
+  width: 400px;
+  height: 300px;
 }
   
 .wordCarousel {
@@ -202,21 +202,9 @@ p {
   font-family: Poppins;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* background: darkorange;  */
+  justify-content: center;40
   
 }
-.modal::after {
-      content:"";
-      display: block;
-      width: 110%;
-      height: 40vh;
-      /* background: radial-gradient(#222, #000); */
-      position: absolute;
-      z-index: -1;
-      transform: rotate(20deg);
-      border-radius: 50%;
-  }
 
  ul.ba {
     list-style-type: none;
@@ -329,10 +317,9 @@ ul.ba li {
   }
   .p1 p {
       max-width: 80%;
-      font-size: 20px;
+      font-size: 1.3em;
       align-items: center;
       margin: 0 auto;
-      /* align-items: center;   */
       line-height: 1.5;
    
   }
@@ -341,26 +328,12 @@ ul.ba li {
     height: 15vh;
     margin-left: 20px;
   }
-  .modal-content > h4 {
-    font-size: 18px;
-    
+
+  .wordCarousel {
+    font-size: 1.1em;
   }
   
-  
-    /* .page-section > h2,
-    .page-section > div {
-      flex: 0 0 100%;
-    }
-  
-    .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
-    }
-  } */
+
   
   @media screen and (max-width: 768px) {
  
@@ -391,7 +364,7 @@ main {
     
 }
 .p1 p {
-    font-size: 12px;
+    font-size: 0.8em;
     margin: 0 10%;
     align-items: center;  
     line-height: 2;
@@ -403,7 +376,7 @@ main {
   margin-left: 30px;
 }
 .modal-content > h4 {
-  font-size: 15px;
+  font-size: 0.8em;
   
 }
 
