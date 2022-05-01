@@ -17,25 +17,8 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
     background-color: var(--tertiary);
-    /* line-height: 15vh; */
-    /* width: 100%;
-    height:100%; */
-    .textcontainer {padding:40px 0;text-align:center;
-    }
-    .particletext {
-       text-align:center;
-       font-size:48px;
-       position: relative;
-      
-       }
-      
-             &:before {
-                transform:translateX(-50%);
-             }
-             &:after {
-                transform:translateY(-50%);
-             }
-          }
+   
+    
 }
 main {
     background: linear-gradient(-45deg, #eebd52, #f36744, #12536b, #23d5ab);
