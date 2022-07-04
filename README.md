@@ -7,7 +7,7 @@ Open for hire!
 
 ### Screenshot
 
-![Website Image]('https://github.com/slsmi894/Portfolio-by-Sandy-Smith/blob/main/assets/images/screenshot.jpg')
+![Website Image]("https://github.com/slsmi894/Portfolio-by-Sandy-Smith/blob/main/assets/images/screenshot.jpg")
 
 ## Deploy Link
 
