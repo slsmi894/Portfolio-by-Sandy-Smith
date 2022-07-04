@@ -7,7 +7,7 @@ Open for hire!
 
 ### Screenshot
 
-![Website Image]("../images/screenshot.jpg")
+![Website Image]("../assets/images/screenshot.jpg")
 
 ## Deploy Link
 
