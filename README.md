@@ -19,4 +19,5 @@ Used HTML, Javascript, Advanced CSS
 
 If you have any questions, you can contact me at:
 
-[Email](mailto:sls2code@gmail.com)
+
+Email: sls2code2@gmail.com
