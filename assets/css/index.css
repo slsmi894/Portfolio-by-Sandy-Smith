@@ -74,7 +74,7 @@ main {
   flex-wrap: wrap;
   font-weight: none;
   text-shadow: 10px 1px 0 rgb(72, 87, 99);
-  
+
 
 }
 
@@ -107,15 +107,13 @@ main {
 
 @media screen and (max-width: 980px) {
 
-  /* main {
-        margin: 0 auto;
-    } */
+
   .navbar h1 {
     margin-left: 50px;
   }
 
   .home>div {
-    /* flex: 0 0 100%; */
+
     text-align: center;
 
   }
@@ -132,9 +130,9 @@ main {
 
 
   .hero {
-    /* justify-content: center; */
+    
     text-align: center;
-    /* max-width: 50%; */
+    
   }
 
   .navbar>h1 {

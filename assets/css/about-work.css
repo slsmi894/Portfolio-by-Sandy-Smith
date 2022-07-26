@@ -17,9 +17,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--primary);
   background-color: var(--tertiary);
-  /* line-height: 10vh; */
-  /* width: 100%;
-    height: 80%; */
+  
 }
 
 
