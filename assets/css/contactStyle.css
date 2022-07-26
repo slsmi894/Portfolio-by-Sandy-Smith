@@ -104,7 +104,7 @@ p {
      font-size: 4em;
   }
   .p1 {
-    line-height: 1.5;
+    line-height: 1.1;
     display: flex;
     /* flex-direction: row;
 
@@ -114,28 +114,48 @@ p {
     max-width: 90%;
     margin-bottom: 10px;
    
-   
+  
   }
-  .p1 p {
-      margin-top: 25px;
+  .p1 {
+      margin-top: 15px;
+      
      
   }
   .p1 > img {
-      width: 275px;
-      height: 275px;
+      width: 300px;
+      height: 300px;
       border-radius:10px;
       box-shadow: 10px 5px 5px black;
   
   }
+  ul {
+    list-style-type: none;
+  }
+
+
  ul.ba {
     list-style-type: none;
     padding: 0;
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
 }
 ul.ba li {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.emailColor {
+  color:rgb(83, 9, 102);
+}
+
+.box {
+  border-radius: 10%;
+}
+
+.inputForm {
+  width: 80%;
+  margin: 0 auto;
+  
 }
 
   @media screen and (max-width: 980px) {

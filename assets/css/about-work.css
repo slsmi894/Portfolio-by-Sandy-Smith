@@ -118,7 +118,7 @@ main {
 
 .p1 p {
   margin-top: 25px;
-  font-size: 0.8em;
+  font-size: 1.1em;
   margin-left: 15px;
   text-decoration: none;
 }
@@ -305,6 +305,10 @@ ul.ba {
 ul.ba li {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.inputForm {
+  margin: auto;
 }
 
 .fa-brands {
