@@ -17,7 +17,8 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--primary);
   background-color: var(--tertiary);
- 
+
+
 }
 
 
@@ -34,7 +35,7 @@ header {
   align-items: center;
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(68, 133, 136, 0.4);
-  height: 18vh;
+  height: 15vh;
 }
 
 header h1 {
@@ -115,17 +116,11 @@ main {
   justify-content: space-evenly;
   max-width: 90%;
   margin-bottom: 10px;
-
-
-}
-
-.p1 {
   margin-top: 15px;
 
-
 }
 
-.p1>img {
+.c-image {
   width: 300px;
   height: 300px;
   border-radius: 10px;
@@ -138,14 +133,14 @@ ul {
 }
 
 
-ul.ba {
+.ba {
   list-style-type: none;
   padding: 0;
   font-size: 1.5em;
   text-align: center;
 }
 
-ul.ba li {
+.ba li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -175,69 +170,106 @@ ul.ba li {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    font-size: 10vw;
+    font-size: 5vw;
   }
 
   header nav {
     justify-content: center;
+
   }
 
   nav a {
-    font-size: 2em;
+    font-size: 1em;
+  }
+  .fa-brands {
+    margin: 15px;
   }
 
-  ul.ba li {
-    margin-top: 50px;
+  .ba li {
+    margin: 3px auto 5px auto;
     text-align: center;
+    font-size: 1em;
   }
 
-  ul.ba {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-shrink: calc(50% - 1em);
+
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  main {
+    flex-shrink: calc(50% - 1em);
+
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .p1 {
+    flex-shrink: calc(50%);
+    /* flex-direction: column; */
+    align-items: center;
+
+
+  }
+
+  .c-image {
+    width: 200px;
+    height: 200px;
+
+  }
+
+    .ba li {
+   
+    margin: 1px auto 1px auto;
+    font-size: .6em;
+  }
+  .fa-brands {
+    font-size: 1em;
+    
+  }
+
+}
+
+@media screen and (max-width: 667px) {
+  nav a {
+    font-size: .5em;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .c-image {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 5px;
+
+  }
+
+  .p1 {
+    flex-shrink: calc(50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    line-height: .8;
+    font-size: .8em;
+
+  }
+
+  .ba li a {
+    margin: 15px;
+    flex-basis: calc(50% - 2em);
+
   }
 
 
-
-
-  @media screen and (max-width: 768px) {
-
-    header {
-      flex-shrink: calc(50% - 1em);
-
-    }
-
-    nav a {
-      font-size: 12px;
-    }
-
-    main {
-      flex-shrink: calc(50% - 1em);
-
-    }
-
-    .title {
-      font-size: 8vw;
-    }
-
-    .p1 {
-      flex-shrink: calc(50% - 1em);
-      flex-direction: column;
-      align-items: center;
-
-    }
-
-    .p1 img {
-      width: 200px;
-      height: 200px;
-
-    }
-
-    ul.ba {
-
-      font-size: 1em;
-    }
-
-    ul.ba li {
-      margin: 5% 10%;
-    }
+}
