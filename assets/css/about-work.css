@@ -370,6 +370,7 @@ ul.ba li {
   margin: 0;
   line-height: 1vh;
   font-size: 1em;
+  padding: 10px;
 }
 
 .flex-item div {
