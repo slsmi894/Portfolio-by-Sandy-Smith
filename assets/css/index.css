@@ -25,7 +25,8 @@ main {
   background: linear-gradient(-45deg, #eebd52, #f36744, #12536b, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
-  line-height: 15vh;
+  line-height: 10vh;
+  /* display: flex; */
   text-align: center;
   justify-content: center;
   box-shadow: 0 5px 10px gray, 0 -5px 10px gray;
@@ -94,13 +95,18 @@ main {
   margin: 0 auto;
 
 }
+.home > div {
+  display: inline;
+  margin-bottom: 20px;
+}
 
 .home a {
   margin-right: 40px;
-  font-size: 1em;
+  
+  font-size: .8em;
   border: 2px solid var(--secondary);
   border-radius: 25px;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--secondary);
   box-shadow: 2px 5px var(--tertiary);
 }
